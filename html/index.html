@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../images/logo_icon.ico">
+    <meta name="author" content="Michael Lim">
+  	<meta name="description" content="Your one-stop source for cakes in the university.">
+  	<meta name="keywords" content="city, cake, shop, cake shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/master.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script type="text/javascript" src="../js/master.js"></script>
+    <script type="text/javascript" src="../js/cakemenu.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <title>Home | City's Cake</title>
+  </head>
+  <body class="css-hidden">
+    <div id="mainContainer" class="css-hidden">
+      <div id="header">
+        <img src="../images/logo.png" alt="Logo">
+        <h1>City's Cake</h1>
+      </div>
+      <div id="navigation">
+        <div class="main_menuBox">
+          <div class="menuBox"></div>
+          <div class="menuBox"></div>
+          <div class="menuBox"></div>
+        </div>
+        <div class="navi-content">
+          <h1>City's Cake</h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="#">Dummy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="subContainer" class="css-hidden">
+          <div id="promo" class="center">
+            <div id="promo-vid">
+              <video autoplay preload muted playsinline>
+                  <source src="http://courses.cs.cityu.edu.hk/cs2204/chocolate.mp4" type="video/mp4">
+                  Your browser does not support viewing this video.
+              </video>
+            </div>
+            <div id="promo-info">
+              <h2>Welcome to City's Cake</h2>
+              <p>Enjoy our homemade cakes, specially made by our chefs to satisfy for your taste buds.</p>
+            </div>
+          </div>
+          <div class="indexContainer">
+            <div id="cakeInfo">
+              <h2>Our Cakes</h2>
+              <div class="surround center">
+                <p><img src="../images/BuccellatorCake.jpg" alt="Buccellator Cake" class="center"></p>
+                <h3>Buccellator</h3>
+              </div>
+              <table class="center">
+                <caption>Nutrition Information</caption>
+                <thead>
+                  <tr>
+                    <th id="type">Amount per 100g</th>
+                    <th id="percentage">%</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Carbohydrate</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>Protein</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td>Fat</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>Cholestrol</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Total may not add to 100%</td>
+                    <td>52</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div id="order">
+              <h2>Order Information</h2>
+              <p>Order your own cake now!</p>
+              <form id="orderInfo" name="orderInfo" action="order.html" method="get" class="center">
+                <fieldset>
+                  <legend>
+                    Input your Order Details Here
+                  </legend>
+                  <div class="formRow">
+                    <div class="left-col">
+                      <label for="telNo" accesskey="t">
+                        Telephone Number
+                      </label>
+                    </div>
+                    <div class="right-col">
+                      <input type="number" id="telNo" name="telNo" tabindex="1" value="" placeholder="Type your phone number here">
+                    </div>
+                  </div>
+                  <div class="formRow">
+                    <div class="left-col">
+                      <label for="pickupDate" accesskey="y">
+                        Pick Up Date
+                      </label>
+                    </div>
+                    <div class="right-col">
+                      <input type="date" id="pickupDate" name="pickupDate" tabindex="2" value="" placeholder="DD-MM-YYYY">
+                    </div>
+                  </div>
+                  <div class="formRow">
+                    <div class="left-col">
+                    </div>
+                    <div class="right-col">
+                      <input type="radio" id="delivery" name="method" value="delivery" tabindex="3" checked>
+                      <label for="delivery" accesskey="a">
+                        Delivery
+                      </label>
+                      <input type="radio" id="pickUp" name="method" value="pickUp" tabindex="4">
+                      <label for="pickUp" accesskey="b">
+                        Pick Up
+                      </label>
+                    </div>
+                  </div>
+                  <div class="buttonRow">
+                    <input type="submit" id="submit" name="submit" value="Submit" tabindex="5"  accesskey="s">
+                    <input type="reset" id="clear" name="clear" value="Clear" tabindex="6" accesskey="r">
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div id="footer">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="design.html">Design</a></li>
+              <li><a href="#">Dummy</a></li>
+            </ul>
+            <p>©2018 City's Cake. Website design by Michael Lim. All rights reserved.</p>
+          </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        videoChange();
+        nutritionChange();
+    </script>
+  </body>
+</html>

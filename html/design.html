@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="../images/logo_icon.ico">
+    <meta name="author" content="Michael Lim">
+  	<meta name="description" content="Acknowledgement for City's Cake content.">
+  	<meta name="keywords" content="city, cake, shop, cake shop, design, acknowledgement">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design | City's Cake</title>
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+    * {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.15;
+    }
+    span {
+      font-weight: bold;
+    }
+    .linked {
+      font-weight: normal;
+    }
+    h1 {
+      text-align: center;
+    }
+    li:nth-last-of-type(1) {
+      margin-bottom: 1em;
+    }
+    ol[type="a"] li:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+    ol:last-of-type li:last-of-type {
+      margin-bottom: 0;
+    }
+    .none {
+      list-style-type: none;
+      display: block;
+    }
+    </style>
+    <script type="text/javascript">
+      var links = document.getElementsByClassName("linked");
+      function linkify() {
+        console.log(links);
+        for (var i=0; i<links.length;i++) {
+          var content = links[i];
+          switch(true) {
+            case (content.innerHTML=="css/master.css"):
+              content.innerHTML = "<a href='../css/master.css'>css/master.css</a>";
+              break;
+            case (content.innerHTML=="css/index.css"):
+              content.innerHTML = "<a href='../css/index.css'>css/index.css</a>";
+              break;
+            case (content.innerHTML=="css/order.css"):
+              content.innerHTML = "<a href='../css/order.css'>css/order.css</a>";
+              break;
+            case (content.innerHTML=="css/print.css"):
+              content.innerHTML = "<a href='../css/print.css'>css/print.css</a>";
+              break;
+            case (content.innerHTML=="css/reset.css"):
+              content.innerHTML = "<a href='../css/reset.css'>css/reset.css</a>";
+              break;
+            case (content.innerHTML=="js/index.js"):
+              content.innerHTML = "<a href='../js/index.js'>js/index.js</a>";
+              break;
+            case (content.innerHTML=="js/order.js"):
+              content.innerHTML = "<a href='../js/order.js'>js/order.js</a>";
+              break;
+            case (content.innerHTML=="js/print.js"):
+              content.innerHTML = "<a href='../js/print.js'>js/print.js</a>";
+              break;
+            case (content.innerHTML=="html/index.html"):
+              content.innerHTML = "<a href='../html/index.html'>html/index.html</a>";
+              break;
+            case (content.innerHTML=="html/order.html"):
+              content.innerHTML = "<a href='../html/order.html'>html/order.html</a>";
+              break;
+            case (content.innerHTML=="html/print.html"):
+              content.innerHTML = "<a href='../html/print.html'>html/print.html</a>";
+              break;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body onload="linkify();">
+    <div id="mainContainer">
+      <div id="acknowledge">
+        <h1>Design Page</h1>
+        <h2>Acknowledgement</h2>
+          <p>Website created by Michael Lim for CS2204 course.</p>
+          <p><a href="https://meyerweb.com/eric/tools/css/reset/">Reset CSS Stylesheet</a> courtesy of Eric A. and Kathryn S. Meyer (2011).</p>
+          <p>"Roboto" font by Google and hosted by Google Fonts. "Lobster" font by  Pablo Impallari and hosted by Google Fonts. Made available offline using <a href="https://google-webfonts-helper.herokuapp.com/fonts">google-webfonts-helper</a> tool by Mario Ranftl.</p>
+          <p>All media used in this website does not require attribution and is only for educational purposess.</p>
+          <p>Swedish color pallette from <a href="https://flatuicolors.com/palette/se">FlatUIColors</a>.</p>
+        <h2>Positioning Schemes Used</h2>
+          <p>Aside from the static (normal) flow, here are several positioning schemes used for completing this task:</p>
+          <ol>
+            <li><span>Absolute</span> Positioning</li>
+            <li class="none">
+              Used to make object positioning comply with its parent container. One of its uses is vertical alignment of a div inside a parent div.
+              The usage of absolute positioning can be found here:
+              <ul>
+                <li>Video Overlay: see <span class="linked">css/index.css</span> [line 29, 190]</li>
+                <li>Order Block: see <span class="linked">css/index.css</span> [line 117]</li>
+                <li>Form Legend: see <span class="linked">css/order.css</span> [line 51]<br></li>
+                <li>Cake Image: see <span class="linked">css/order.css</span> [line 105]</li>
+              </ul>
+            </li>
+            <li><span>Fixed</span> Positioning</li>
+            <li class="none">
+              Fixed layout is used because the objects should not go away from the viewport when the user is scrolling on the webpage or moving the viewport in any way. Therefore, it must be fixed to a place using the CSS property "position: fixed;"
+              The usage of fixed positioning can be found here:
+              <ul>
+                <li>Header: see <span class="linked">css/master.css</span> [line 192]</li>
+                <li>Navigation Button Container: see <span class="linked">css/master.css</span> [line 227]</li>
+                <li>Navigation Menu Icon (CSS Drawing): see <span class="linked">css/master.css</span> [line 284]</li>
+                <li>Navigation Sidebar: see <span class="linked">css/master.css</span> [line 309]</li>
+                <li>Error Block Popup: see <span class="linked">css/order.css</span> [line 6]</li>
+                <li>Page Dimmer Div: see <span class="linked">css/order.css</span> [line 26]</li>
+              </ul>
+            </li>
+            <li><span>Relative</span> Positioning</li>
+            <li class="none">
+              Relative positioning makes the positioning of blocks adherent to normal flow even though it is contained in a block. Used to manipulate blocks so a specific positioning can be achieved (e.g. buttons which adjust to the page dimensions, text on logo)
+              The usage of relative positioning can be found here:
+              <ul>
+                <li>Text Logo: see <span class="linked">css/master.css</span> [line 211]</li>
+                <li>Page Content Container: see <span class="linked">css/master.css</span> [line 269]</li>
+                <li>Video Overlay: see <span class="linked">css/index.css</span> [line 2]</li>
+                <li>Cake Information and Order Form Container: see <span class="linked">css/index.css</span> [line 49]</li>
+                <li>Image in Cake Information: see <span class="linked">css/index.css</span> [line 69]</li>
+                <li>Form: see <span class="linked">css/index.css</span> [line 146]</li>
+                <li>Order Block Repositioning: see <span class="linked">css/index.css</span> [line 167]</li>
+                <li>Cake Menu: see <span class="linked">css/order.css</span> [line 77]</li>
+                <li>Individual Cake Container: see <span class="linked">css/order.css</span> [line 83]</li>
+                <li>Cake Container Image: see <span class="linked">css/order.css</span> [line 101]</li>
+                <li>Invoice Container: see <span class="linked">css/print.css</span> [line 10]</li>
+                <li>Form Buttons: see <span class="linked">css/print.css</span> [line 64]</li>
+            </ul>
+            </li>
+          </ol>
+          <p></p>
+          <h2>Advanced CSS3 Techniques Used</h2>
+          <ol>
+            <li>
+              <span>@font-face</span> used to store fonts locally: see
+              <span class="linked">css/master.css</span> [lines 2, 15, 28, 41, 54, 67, 80, 93, 106, 119, 132, 145, and 158]
+            </li>
+            <li>
+              <span>@media query</span> for supporting multiple devices with different widths or specifying another media, such as printer: see
+              <span class="linked">css/master.css</span> [line 497],
+              <span class="linked">css/index.css</span> [lines 155 and 181],
+              <span class="linked">css/order.css</span> [lines 153 and 181], and
+              <span class="linked">css/print.css</span> [lines 77 and 145]
+            </li>
+            <li>
+              <span>Advanced pseudo-class selector {nth-of-type( )}</span>: see
+              <span class="linked">css/master.css</span> [line 377],
+              <span class="linked">css/index.css</span> [line 87],
+              <span class="linked">css/order.css</span> [lines 90, 94, 134, 170, 173, and 176], and
+              <span class="linked">css/print.css</span> [lines 69 and 109]
+            </li>
+            <li>
+              <span>Alpha + Color / RGBA</span> to specify color with opacity: see
+              <span class="linked">css/master.css</span> [lines 218, 316, and 324],
+              <span class="linked">css/index.css</span> [line 25], and
+              <span class="linked">css/order.css</span> [line 31]
+            </li>
+            <li>
+              <span>Animation</span>: see
+              <span class="linked">css/master.css</span> [lines 294 to 302]
+            </li>
+            <li>
+              <span>Border Radius</span>: see
+              <span class="linked">css/master.css</span> [lines 430, 458, and 483] and <span class="linked">css/order.css</span> [line 3]</li>
+            <li>
+              <span>Box Shadow</span>: see <span class="linked">css/master.css</span> [lines 316-319 and 324]
+            </li>
+            <li>
+              <span>Box-sizing</span> to set how borders are drawn around a box container: see <span class="linked">css/master.css</span> [line 426]
+            </li>
+            <li>
+              <span>calc() function</span> to calculate dimensions: see
+              <span class="linked">css/master.css</span> [lines 272, 551],
+              <span class="linked">css/index.css</span> [lines 5 and 203],
+              <span class="linked">css/order.css</span> [lines 58 and 161],
+              and <span class="linked">css/print.css</span> [line 57]
+            </li>
+            <li>
+              <span>Filter Property (blur, grayscale, hue-rotate)</span> for manipulating object appearance: see
+              <span class="linked">css/index.css</span> [line 21],
+              <span class="linked">css/order.css</span> [lines 108 and 115], and
+              <span class="linked">css/print.css</span> [line 81]
+            </li>
+            <li>
+              <span>Transform</span> for object rotation and translation: see
+              <span class="linked">css/master.css</span> [lines 220-221],
+              <span class="linked">css/index.css</span> [lines 34-35, 120-121, 170-171, and 194-195],
+              <span class="linked">css/order.css</span> [line 9], and
+              <span class="linked">css/print.css</span> [line 22, 133, and 168]</li>
+            <li>
+              <span>Transition</span>: see
+              <span class="linked">css/master.css</span> [lines 254 to 256, 317 to 319, 332 to 334, 485 to 487] and
+              <span class="linked">css/order.css</span> [lines 109 to 111]
+            </li>
+          </ol>
+        <h2>CSS Stylesheet Usage</h2>
+          <p>
+            For this project, no inline or embedded CSS is used, because using those CSS insertion methods might complicate things as it is difficult to edit the CSS properties when needed. For every page requiring CSS styling (Home, Order, and Design pages), three stylesheets are linked to it externally:
+          </p>
+          <ol>
+            <li><span class="linked">css/reset.css</span> used to reset browser defaults, ensuring uniformity of styling between different browsers</li>
+            <li><span class="linked">css/master.css</span> used to apply the same general styling shared by all pages, ensuring a uniform look across pages and to avoid CSS code duplication, which makes editing the CSS styling complicated and tedious.</li>
+            <li>Styling of individual pages
+              (<span class="linked">css/index.css</span>,
+              <span class="linked">css/order.css</span>,
+              or <span class="linked">css/print.css</span>) to make changes to styling for elements unique to each page.</li>
+          </ol>
+          <p>
+            @media query is also included in the master and indivudial pages' CSS stylesheet so that different devices will display the website differently according to the needs (e.g. mobile phone, computer, tablet, printer, etc.).
+          </p>
+        <h2>Event Handler Set Up Methods</h2>
+          <p>Two ways of event handler set up are used:</p>
+          <ol>
+            <li>By Javascript</li>
+              <ol type="a">
+                <li>Using the HTML DOM</li>
+                Usage can be found in <span class="linked">js/index.js</span> [line 5] and <span class="linked">js/order.js</span> [line 38].
+                <li>Using addEventListener() method</li>
+                Usage can be found in <span class="linked">js/order.js</span> [line 1 and 86] and <span class="linked">js/print.js</span> [lines 17, 57, and 58].
+              </ol>
+            <li>By HTML</li>
+            <ol type="a">
+              <li>Using inline JavaScript</li>
+              Usage can be found in <span class="linked">html/index.html</span> [line 154] and <span class="linked">html/order.html</span> [lines 114 to 116].
+              <li>Using DOM Event</li>
+              Usage can be found in <span class="linked">html/order.html</span> [lines 48 and 58] and <span class="linked">html/print.html</span> [line 19].
+            </ol>
+          </ol>
+          </p>
+        <p>
+          <a href="../html/index.html">Back to Home Page</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
