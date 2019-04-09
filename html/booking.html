@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Seat Booking</title>
+        <style media="screen">
+            * {
+                @import url('https://fonts.googleapis.com/css?family=Roboto');
+                font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+                text-align: center;
+            }
+            body img {
+                width: 15%;
+            }
+            input[type='number'] {
+                font-size: 7em;
+                width: 200px;
+                height: 200px;
+                clear: both;
+            }
+            input[type='submit'] {
+                font-size: 2em;
+                height: 3em;
+                width: 20%;
+                display: block;
+                margin: 10px auto;
+                -moz-appearance: button;
+                -webkit-appearance: button;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../images/foodpartners logo.png" alt="Foodpartners Logo">
+        <h1>Enter the number of seats to reserve:</h1>
+        <form class="seat" action="confirm.html" method="post">
+            <input type="number" name="seats" value="" maxlength="3">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
