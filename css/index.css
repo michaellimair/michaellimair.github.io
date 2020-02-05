@@ -1,216 +1,61 @@
-#promo {
-  position: relative;
-  margin-top: 120px;
-  width: 100%;
-  height: calc(100% - 150px);
-  max-height:500px;
-  min-height: 250px;
-  overflow-y: hidden;
-  overflow-x: visible;
-}
-
-#promo-vid {
-  width: 100%;
-  height: 100%;
-}
-
-#promo-vid video {
-  width: 100%;
-  object-fit: cover;
-  min-height: 100%;
-  filter: hue-rotate(5deg) grayscale(40%);
-}
-
-#promo-info {
-  background-color: rgba(30,39,46,0.9);
-  /*text*/
-  color: #ffffff;
-  /*positioning and layout*/
-  position: absolute;
-  width: 45%;
-  top: 50%;
-  right: 5%;
-  padding: 20px;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-}
-
-#promo-info h2 {
-  font-family: "Lobster", cursive;
-  font-size: 2em;
-}
-
-#promo-info p {
-  margin: 20px 0 0 0;
-  line-height: 1.15;
-}
-
-.indexContainer {
-  position: relative;
-  width:100%;
-  overflow: hidden;
-}
-
-#interact {
-  padding-top: 20px;
-}
-
-#cakeInfo, #order {
-  padding: 1.5em 0;
-}
-
-#cakeInfo {
-  background-color: #dddddd;
-  float: left;
-  width: 35%;
-}
-
-#cakeInfo img {
-  position: relative;
-  display: block;
-  width:80%;
-  height: 150px;
-  object-fit:contain;
-}
-
-#cakeInfo table {
-  width: 75%;
-  padding-bottom: 1em;
-}
-
-#cakeInfo caption {
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-bottom: 0.2em;
-  line-height: 1.5;
-}
-
-#cakeInfo td:nth-of-type(2) {
-  margin-left: 0.5em;
-  text-align: center;
-}
-
-#cakeInfo h2, #order h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 2em;
-  margin-bottom: 0.4em;
-}
-
-#cakeInfo h3 {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 0.4em;
-  font-size: 1.5em;
-  font-family: "Lobster", cursive;
-  font-weight: 300;
-}
-
-.surround {
-  padding: 0.8em 0;
-  width: 70%;
-  background-color: #ffffff;
-  max-width: 280px;
-}
-
-#order {
-  float: left;
-  width: 65%;
-  position: absolute;
-  left: 35%;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
+#root {
+  flex: 1;
+  padding: 16px;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-}
-
-#order.css-column {
-  padding: 1em;
-}
-
-#order p {
   text-align: center;
-  font-size: 1em;
-  margin-bottom: 1.5em;
 }
 
-#orderInfo legend {
+#soc-med {
+  margin: 16px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-basis: 64px;
+  justify-content: center;
+}
+
+.soc-med-img {
+  height: 64px;
+  padding: 0 16px;
+}
+
+footer {
   text-align: center;
-  font-weight: bold;
-  text-decoration: underline;
-  font-size: 1.5em;
-  margin-bottom: 1em;
-  font-weight: 300;
+  font-size: 8px;
 }
 
-form {
-  width:80%;
-  position: relative;
+#apps {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-input[type=submit], input[type=reset] {
-  font-size: 1em;
-  margin-left: 10px;
-  margin-right: 10px;
+.app-img {
+  border-radius: 16px;
 }
 
-@media screen and (max-width:800px) {
-  #promo {
-    margin-top: 80px;
-  }
-  #cakeInfo {
-    width: 100%;
-    clear: both;
-  }
-  #order {
-    clear:both;
-    width: 100%;
-    /* reposition div */
-    position: relative;
-    left: 0;
-    top: 0;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-  }
-  .buttonRow {
-    width: 70%;
-  }
-  .surround {
-    width: 40%;
-    min-width: 210px;
-  }
-  input[type=submit], input[type=reset] {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.app-img img {
+  border-radius: 24px;
+  height: 120px;
 }
 
-@media screen and (max-width:600px) {
-  #promo-info h2 {
-    font-size: 1.5em;
-  }
-  #promo-info {
-    /*text*/
-    color: #ffffff;
-    /*positioning and layout*/
-    position: absolute;
-    width: 80%;
-    top: 50%;
-    padding: 20px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    right: 10%;
-  }
-  #promo-vid video {
-    min-height: 100%;
-  }
-  #promo {
-    width: 100%;
-    height: calc(50% - 150px);
-    min-height: 220px;
-  }
-  #cakeInfo h3 {
-    font-size: 1.2em;
-  }
+#apps div {
+  padding: 0 16px;
+}
+
+.stores {
+  width: 120px;
+}
+
+.playstore {
+  width: 136px !important;
+}
+
+.app-title {
+  margin: 8px 0;
 }
