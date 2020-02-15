@@ -61,11 +61,6 @@ footer {
   padding-right: 16px;
 }
 
-#apps > div {
-  float: left;
-  padding: 0 16px;
-}
-
 .site-block {
   clear: both;
 }
@@ -76,6 +71,7 @@ footer {
 
 .app-block {
   width: 150px;
+  clear: both;
 }
 
 .app-title {
