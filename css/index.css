@@ -79,16 +79,8 @@ footer {
   margin-bottom: 0px;
 }
 
-.site-block {
-  padding: 16px 0;
-}
-
-.site-block:first-of-type {
-  padding-top: 0px;
-}
-
-.site-block:last-of-type {
-  padding-bottom: 0px;
+.site-block:not(:last-child) {
+  padding-bottom: 16px;
 }
 
 .site-desc {
