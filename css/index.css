@@ -21,24 +21,35 @@
 }
 
 #soc-med {
-  margin: 16px;
+  margin: 16px 0;
   display: flex;
   flex: 1;
-  /* align-items: center; */
+  align-items: center;
   flex-basis: 64px;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .soc-med-img {
-  height: 64px;
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.soc-med-row {
   padding-right: 24px;
 }
 
+.soc-med-row:last-of-type {
+  padding-right: 0;
+}
+
 footer {
-  /* text-align: center; */
-  font-size: 8px;
   padding: 16px;
   clear: both;
+}
+
+.disclaimer {
+  font-size: 8px;
 }
 
 #apps {
@@ -47,7 +58,7 @@ footer {
 
 .action-msg {
   padding-top: 16px;
-  clear: both;
+  display: block;
 }
 
 .app-desc {
@@ -104,5 +115,86 @@ footer {
 }
 
 #myname {
+  font-weight: bold;
+}
+
+.site-row {
+  display: flex;
+}
+
+.site-col {
+  flex: 1;
+  width: 50%;
+}
+
+.music-container {
+  padding-right: 16px;
+}
+
+.apps-container {
+  padding-left: 16px;
+}
+
+.sc-embed {
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 960px) {
+  .site-row {
+    flex-direction: column;
+  }
+
+  .site-col {
+    width: initial;
+  }
+
+  .music-container {
+    padding-right: 0;
+  }
+  
+  .apps-container {
+    padding-left: 0;
+  }  
+}
+
+.text-center {
+  text-align: center;
+}
+
+.middle-music {
+  margin: 24px 0;
+}
+
+.edu-row {
+  display: flex;
+  padding: 16px 0;
+}
+
+.made-by {
+  margin-bottom: 16px;
+}
+
+.edu-image-container {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-image {
+  width: 100%;
+  display: inline-block;
+}
+
+.edu-info {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edu-inst {
+  font-size: 1.2rem;
   font-weight: bold;
 }
