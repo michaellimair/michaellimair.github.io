@@ -9,15 +9,36 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/master.css">
+    
+    <script>
+    // Define dataLayer and the gtag function.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQWZPV714J"></script>
+    // Default ad_storage to 'denied' as a placeholder
+    // Determine actual values based on your own requirements
+    gtag('consent', 'default', {
+      'ad_storage': 'denied'
+    });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQWZPV714J">
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
+      gtag('js', new Date());
       gtag('config', 'G-PQWZPV714J');
+    </script>
+
+    <!-- Update this section based on your business requirements. -->
+    <script>
+      function consentGranted() {
+        gtag('consent', 'update', {
+          'ad_storage': 'granted'
+        });
+      }
     </script>
   </head>
 
@@ -27,7 +48,7 @@
         <h1>
           Hi! Welcome to my web page!
         </h1>
-        <img src="images/profile.jpeg" id="profile-picture" alt="Michael Lim">
+        <img src="images/profile-new.jpeg" id="profile-picture" alt="Michael Lim">
         <p>My name is <a href="https://michaellimair.github.io"><span id="myname">Michael Lim</span></a>, a Computer Science student at the <a href="https://www.cityu.edu.hk" target="_blank">City University of Hong Kong</a>.</p><br>  
       </header>
       <p>I am a full-time software engineer at <a href="https://jpmorganchase.com">JPMorgan Chase Bank N.A. (Hong Kong)</a>, working under the <a href="https://www.jpmorgan.com/solutions/cib/securities-services/risk-as-a-service" target="_blank">Risk as a Service</a> team.</p>
